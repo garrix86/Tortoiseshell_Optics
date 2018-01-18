@@ -15,6 +15,12 @@ body {
   width: 960px;
   margin: 0 auto;
 }
+/**@media query**/
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
 
 /*--* Company Header *--*/
 .header {
@@ -25,9 +31,6 @@ body {
   height: 30rem;
   display: flex;
   justify-content: center;
-}
-
-.header .container{
 }
 
 .header .branding {
@@ -53,6 +56,7 @@ align-items: center;
   margin-right: 1rem;
 }
 
+
 /*nav*/
 nav {
   margin-top: 1rem 0;
@@ -68,10 +72,11 @@ nav li {
   padding-right: 2rem;
   text-decoration: none;
 }
-
+nav ul.mobile-nav{
+  display: none;
+}
 /*banner*/
 .banner {
-  /*background-color: green;*/
   display: flex;
   justify-content: flex-end;
   margin-top: 10rem;
@@ -89,6 +94,56 @@ nav li {
   line-height: 1.2;
 }
 
+/**@media query**/
+/*1024px*/
+@media only screen and (max-width: 1024px) {
+  .header .branding {
+    margin-top: 0;
+  }
+
+  .header {
+    height: 22rem;
+  }
+
+  .banner {
+    margin-top: 5rem;
+    margin-right: 4rem;/***************position relative +2-- -4****/
+  }
+
+  .banner span {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+}
+
+/*470*/
+@media only screen and (max-width: 470px) {
+  .branding span,
+  nav ul {
+  display: none;
+  }
+
+  nav ul.mobile-nav {
+    display: block;
+    text-align: right;
+  }
+
+  .header {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .banner {
+    margin-top: 9rem;
+    width: 100%;
+  }
+
+  .banner span {
+    padding: 1rem 0;
+    width: 100%;
+    font-size: 1rem;
+  }
+}
 /*--* Process and Infos *--*/
 .process,
 .details-info {
