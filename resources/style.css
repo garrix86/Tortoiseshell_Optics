@@ -101,6 +101,9 @@ nav ul.mobile-nav{
     margin-top: 0;
   }
 
+  .container{
+    width: 100%;
+  }
   .header {
     height: 22rem;
   }
@@ -116,7 +119,7 @@ nav ul.mobile-nav{
   }
 }
 
-/*470*/
+/*470px*/
 @media only screen and (max-width: 470px) {
   .branding span,
   nav ul {
@@ -135,7 +138,7 @@ nav ul.mobile-nav{
 
   .banner {
     margin-top: 9rem;
-    width: 100%;
+
   }
 
   .banner span {
@@ -179,8 +182,8 @@ nav ul.mobile-nav{
 .details-info .info {
   display: flex;
   flex-direction: column;
-  max-width: 35%;
-  max-height: auto;
+  width: 35%;
+  height: auto;
   margin-left: 5%;
 }
 
@@ -202,7 +205,29 @@ nav ul.mobile-nav{
 .info p {
   margin-top: 1rem;
 }
+/**@media query**/
+/*470px*/
+@media only screen and (max-width: 470px) {
+.process,
+.details-info,
+.info {
+  display: flex;
+  flex-flow: column wrap;
+}
 
+.exams,
+.fittings,
+.delivery,
+.info {
+  width: auto;
+}
+
+.info p {
+  background-color: blue;
+  width: 100%;
+}
+
+}
 /*--* Footer *--*/
 footer .container{
   display: flex;
