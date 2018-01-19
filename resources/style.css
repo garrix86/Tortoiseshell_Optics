@@ -134,17 +134,22 @@ nav ul.mobile-nav{
   .header {
     background-position: 20%;
     height: 17rem;
+
   }
 
   .banner {
+    display: flex;
+    justify-content: center;
     margin-top: 9rem;
-
+    width: 100%;
+    position: static;
+    background-color: white;
   }
 
   .banner span {
     padding: 1rem 0;
-    width: 100%;
     font-size: 1rem;
+    text-align: center;
   }
 }
 /*--* Process and Infos *--*/
@@ -211,22 +216,34 @@ nav ul.mobile-nav{
 .process,
 .details-info,
 .info {
-  display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
 }
 
 .exams,
 .fittings,
-.delivery,
-.info {
-  width: auto;
+.delivery {
+  width: 100%;
+  padding: 0;
+}
+
+
+.deteils-info .info {
+  width: 100%;
+  margin-left: 0;
 }
 
 .info p {
-  background-color: blue;
-  width: 100%;
+  font-size: 0.77rem;
 }
 
+footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  display: none;
+}
 }
 /*--* Footer *--*/
 footer .container{
